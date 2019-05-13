@@ -75,17 +75,4 @@ main {
     border-radius: 5px;
     padding: 8px;
     color: #ffffff;
-}
-
-.backthen li div {
-    margin-right: 1.5em;
-    content: '';
-}
-
-/* -----Media------ */
-
-@media(max-width: 1023) {
-    .grid > .row {
-        flex-direction: column;
-    }
-}
+} 
