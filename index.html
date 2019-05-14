@@ -6,8 +6,51 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link rel="stylesheet" href="https://volodymyrkushnir.com/assets/stylesheets/base.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="preloader.css">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>  
+    <script type="text/javascript">$(window).on('load', function () {
+      var $preloader = $('#p_prldr'),
+          $svg_anm   = $preloader.find('.svg_anm');
+      $svg_anm.fadeOut();
+      $preloader.delay(500).fadeOut('slow');});
+    </script>
+  
+    <script src="wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </head>
   <body>
+    <div id="p_prldr">
+      <div class="contpre">
+        <span class="svg_anm">
+            <svg version="1.1" id="L2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+          <circle fill="none" stroke="#fff" stroke-width="4" stroke-miterlimit="10" cx="50" cy="50" r="48"/>
+          <line fill="none" stroke-linecap="round" stroke="#fff" stroke-width="4" stroke-miterlimit="10" x1="50" y1="50" x2="85" y2="50.5">
+            <animateTransform 
+                 attributeName="transform" 
+                 dur="2s"
+                 type="rotate"
+                 from="0 50 50"
+                 to="360 50 50"
+                 repeatCount="indefinite" />
+          </line>
+          <line fill="none" stroke-linecap="round" stroke="#fff" stroke-width="4" stroke-miterlimit="10" x1="50" y1="50" x2="49.5" y2="74">
+            <animateTransform 
+                 attributeName="transform" 
+                 dur="15s"
+                 type="rotate"
+                 from="0 50 50"
+                 to="360 50 50"
+                 repeatCount="indefinite" />
+          </line>
+          </svg>
+        </span>
+      </div>
+    </div>
     <main>
       <article>
         <div class="page" style="border-color: midnightblue;">
@@ -15,7 +58,9 @@
             <div class="row">
               <div class="three wide center aligned column">
                 <div class="avatar-wrapper">
-                  <object class="avatar" data="https://upload.wikimedia.org/wikipedia/commons/5/56/Donald_Trump_official_portrait.jpg" role="img" aria-label="My profile picture"></object>
+                  <img  class="avatar" src="https://upload.wikimedia.org/wikipedia/commons/5/56/Donald_Trump_official_portrait.jpg" name="Tramp" alt="avatar" 
+                  onMouseOver="window.document.images['Tramp'].src='https://www.aim.org/wp-content/uploads/2017/03/Donald_Trump_official_portrait_cropped-1.jpg' " 
+                  onMouseOut="window.document.images['Tramp'].src='https://upload.wikimedia.org/wikipedia/commons/5/56/Donald_Trump_official_portrait.jpg'" />
                 </div>
               </div>
               <div class="thirteen wide column">
@@ -90,12 +135,12 @@
                 <h6>Back then</h6>
                 <ul class="timeline backthen">
                     <li>
-                        <span><em>2009</em></span>
-                        <p>Changed my mind and became Republican again</p>
+                        <span class="wow heartBeat"><em>2009</em></span>
+                        <p class="wow fadeInUp">Changed my mind and became Republican again</p>
                     </li>
                     <li>
-                        <span><em>2005</em></span>
-                        <p>Started Trump University with Michael Sexton and Jonathan Spitalny: no grades, 
+                        <span class="wow heartBeat"><em>2005</em></span>
+                        <p class="wow fadeInUp">Started Trump University with Michael Sexton and Jonathan Spitalny: no grades, 
                           certificates and other bureaucracy, but program offered courses in real estate, 
                           asset management entrepreneurship, and wealth creation. 98% students gave positive 
                           reviews while studying, however some of these ungrateful gringos filed lawsuits 
@@ -103,60 +148,60 @@
                         </p>
                     </li>
                     <li>
-                        <span><em>2002</em></span>
-                        <p>Acquired the former Hotel Delmonico, which was renovated and reopened in 2004 as 
+                        <span class="wow heartBeat"><em>2002</em></span>
+                        <p class="wow fadeInUp">Acquired the former Hotel Delmonico, which was renovated and reopened in 2004 as 
                           the Trump Park Avenue. I sure do like my surname!
                         </p>
                     </li>
                     <li>
-                        <span><em>2001</em></span>
-                        <p>Completed Trump World Tower and joined the Democratic Party</p>
+                        <span class="wow heartBeat"><em>2001</em></span>
+                        <p class="wow fadeInUp">Completed Trump World Tower and joined the Democratic Party</p>
                     </li>
                     <li>
-                        <span><em>1999</em></span>
-                        <p>Started buying golf courses. They are very cheap, I have 18 of them now in USA
+                        <span class="wow heartBeat"><em>1999</em></span>
+                        <p class="wow fadeInUp">Started buying golf courses. They are very cheap, I have 18 of them now in USA
                           and abroad! Also switched to the Reform Party that year
                         </p>
                     </li>
                     <li>
-                        <span><em>1997</em></span>
-                        <p>Began a multi-building development along the Hudson River, which was named 
+                        <span class="wow heartBeat"><em>1997</em></span>
+                        <p class="wow fadeInUp">Began a multi-building development along the Hudson River, which was named 
                           Trump Place. Me and the other investors sold our shares for $1.8 billion 
                           and that was then the biggest residential sale in the history of New York City
                         </p>
                     </li><li>
-                        <span><em>1996</em></span>
-                        <p>Acquired the Bank of Manhattan Trust Building, which was a vacant seventy-one 
+                        <span class="wow heartBeat"><em>1996</em></span>
+                        <p class="wow fadeInUp">Acquired the Bank of Manhattan Trust Building, which was a vacant seventy-one 
                           story skyscraper on Wall Street. After an extensive renovation, the high-rise 
                           was renamed the Trump Building
                         </p>
                     </li>
                     <li>
-                        <span><em>1994</em></span>
-                        <p>Refurbished the Gulf and Western Building on Columbus Circle, turned it 
+                        <span class="wow heartBeat"><em>1994</em></span>
+                        <p class="wow fadeInUp">Refurbished the Gulf and Western Building on Columbus Circle, turned it 
                           into a 44-story luxury property known as Trump International Hotel and Tower
                         </p>
                     </li>
                     <li>
-                        <span><em>1989</em></span>
-                        <p>Ran a second hand airline called Trump Shuttle. What a waste of money, 
+                        <span class="wow heartBeat"><em>1989</em></span>
+                        <p class="wow fadeInUp">Ran a second hand airline called Trump Shuttle. What a waste of money, 
                           I had to sell it, now it is American Airlines Shuttle, btw
                         </p>
                     </li>
                     <li>
-                        <span><em>1988</em></span>
-                        <p>Acquired the Plaza Hotel in Manhattan for $407 million, invested $50 
+                        <span class="wow heartBeat"><em>1988</em></span>
+                        <p class="wow fadeInUp">Acquired the Plaza Hotel in Manhattan for $407 million, invested $50 
                         million to restore the building and boosted it from three-star to four-star 
                         hotel (I called it "the Mona Lisa" and sold it for a lot of cash in 1995)
                       </p>
                     </li>
                     <li>
-                        <span><em>1987</em></span>
-                        <p>Registered as a Republican</p>
+                        <span class="wow heartBeat"><em>1987</em></span>
+                        <p class="wow fadeInUp">Registered as a Republican</p>
                     </li>
                     <li>
-                        <span><em>1985</em></span>
-                        <p>I bought the Mar-a-Lago estate in Palm Beach and turned it into a 
+                        <span class="wow heartBeat"><em>1985</em></span>
+                        <p class="wow fadeInUp">I bought the Mar-a-Lago estate in Palm Beach and turned it into a 
                           private club.You can join if you pay $200K initiation fee 
                           (and there is another annual fee for members, it is very expensive to be rich). 
                           That year I also opened a casino called Trump Castle. My wife Ivana became 
@@ -164,15 +209,15 @@
                         </p>
                     </li>
                     <li>
-                        <span><em>1983</em></span>
-                        <p>I purchased New Jersey Generals, an American football team. I changed team's 
+                        <span class="wow heartBeat"><em>1983</em></span>
+                        <p class="wow fadeInUp">I purchased New Jersey Generals, an American football team. I changed team's 
                           play schedule and filed an antitrust lawsuit against United States Football 
                           League, so NJG are not doing so good now, but back then they were great!
                         </p>
                     </li>
                     <li>
-                        <span><em>1980</em></span>
-                        <p>Started developing the Trump Tower skyscraper in Manhattan, I payed 
+                        <span class="wow heartBeat"><em>1980</em></span>
+                        <p class="wow fadeInUp">Started developing the Trump Tower skyscraper in Manhattan, I payed 
                           a crew of undocumented Polish workers to demolish the historic Bonwit 
                           Teller store, including art deco features. All this to make architectural 
                           critic Paul Goldberger say in 1983 that the tower's atrium is "the most pleasant 
@@ -183,18 +228,18 @@
                         </p>
                     </li>
                     <li>
-                        <span><em>1978</em></span>
-                        <p>Purchased a 50 percent stake in the derelict Commodore Hotel and turned 
+                        <span class="wow heartBeat"><em>1978</em></span>
+                        <p class="wow fadeInUp">Purchased a 50 percent stake in the derelict Commodore Hotel and turned 
                           it into the Grand Hyatt Hotel in 2 years of remodeling
                         </p>
                     </li>
                     <li>
-                        <span><em>1971</em></span>
-                        <p>Was promoted to president of the company and renamed it The Trump Organization</p>
+                        <span class="wow heartBeat"><em>1971</em></span>
+                        <p class="wow fadeInUp">Was promoted to president of the company and renamed it The Trump Organization</p>
                     </li>
                     <li>
-                        <span><em>1968</em></span>
-                        <p>Began my career at my father's real estate development company, Elizabeth Trump & Son</p>
+                        <span class="wow heartBeat"><em>1968</em></span>
+                        <p class="wow fadeInUp">Began my career at my father's real estate development company, Elizabeth Trump & Son</p>
                     </li>
                 </ul>
               </div>
