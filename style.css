@@ -76,3 +76,8 @@ main {
     padding: 8px;
     color: #ffffff;
 } 
+
+div .divider .fat {
+    border-top: 0.1em solid rgba(10, 10, 10, 1);
+    width: 60%;
+}
