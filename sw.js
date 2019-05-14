@@ -26,8 +26,12 @@ self.addEventListener('message', (event) => {
  */
 self.__precacheManifest = [
   {
+    "url": "animate.css",
+    "revision": "8dbc6dc67b4724087e6d907ff95ac6db"
+  },
+  {
     "url": "index.html",
-    "revision": "6520dec62db74cfb48dc71872da3bba4"
+    "revision": "e08dde270079135be99abde21b1ceb06"
   },
   {
     "url": "style.css",
